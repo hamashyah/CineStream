@@ -1,0 +1,76 @@
+    body { background-color: #141414; color: white; }
+        .movie-poster { width: 100%; border-radius: 5px; }
+        .movie-grid { display: flex; flex-wrap: wrap; gap: 20px; }
+        .movie-item { width: calc(25% - 20px); position: relative; cursor: pointer; }
+
+        /* Adjustment for smaller screens */
+        @media (max-width: 768px) {
+            .movie-item { width: calc(50% - 10px); }
+        }
+
+        @media (max-width: 576px) {
+            .movie-item { width: calc(50% - 10px); }
+        }
+
+        /* Custom header */
+        .navbar { background-color: #1c1c1c; padding: 20px; }
+        .navbar-brand img { width: 50px; height: 50px; }
+
+        /* Layout with sidebar */
+        .main-content { display: flex; }
+        .sidebar { width: 250px; background-color: #1c1c1c; padding: 20px; }
+        .sidebar h3 { color: white; margin-bottom: 20px; }
+        .sidebar ul { list-style-type: none; padding: 0; }
+        .sidebar ul li { margin-bottom: 10px; }
+        .sidebar ul li a { color: white; text-decoration: none; font-size: 1.2rem; }
+        .sidebar ul li a:hover { text-decoration: underline; }
+
+        /* Style for dropdown menu on smaller screens */
+        .mobile-menu-button {
+            display: none;
+            background-color: #1c1c1c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            width: 100%;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        .mobile-menu { 
+            display: none;
+            background-color: #1c1c1c;
+            position: absolute;
+            width: 100%;
+            top: 70px;
+            left: 0;
+            z-index: 100;
+            padding: 20px;
+        }
+        .mobile-menu ul { list-style-type: none; padding: 0; }
+        .mobile-menu ul li { margin-bottom: 10px; }
+        .mobile-menu ul li a { color: white; text-decoration: none; font-size: 1.2rem; }
+
+        /* Movie grid */
+        .movie-container { flex: 1; padding: 20px; }
+
+        .brand-name {
+            font-size: 36px;
+            color: white;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+        /* Hide sidebar and show dropdown menu on mobile devices */
+        @media (max-width: 992px) {
+            .sidebar {
+                display: none;
+            }
+
+            .mobile-menu-button {
+                display: block;
+            }
+
+            .mobile-menu ul li a {
+                font-size: 1rem;
+            }
+        }
