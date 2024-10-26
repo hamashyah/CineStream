@@ -48,7 +48,7 @@ To get a local copy of CineStream running, follow these steps:
    ```
 
 3. **Set Up Environment Variables:
-You can use the default API Key provided in the .env file, or create your own by signing up on RapidAPI at CineStream API (recommended)https://rapidapi.com/dataforge-dataforge-default/api/cinestream-api. To set it up, add a .env file in the root directory with the following variable:
+You can use the default API Key provided in the .env file, or create your own by signing up on RapidAPI at CineStream API (recommended)https://rapidapi.com/dataforge-dataforge-default/api/cinestream-api.(Is free) To set it up, add a .env file in the root directory with the following variable:
   
 ```bash
   API_KEY=your_rapidapi_key
