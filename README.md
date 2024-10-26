@@ -1,7 +1,9 @@
 
 # CineStream
 
+
 **CineStream** is a web-based application that allows users to browse and stream movies. It integrates with the CineStream API via RapidAPI, providing access to movie data, including genres, popular movies, and movie details, with options to search and filter by genre.
+![CineStream Interface](https://i.ibb.co/LpZvy4Q/wetw4ytw4eyerjurtkj.png)
 
 ## Table of Contents
 
